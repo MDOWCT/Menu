@@ -1,15 +1,15 @@
 #include <iostream>
+#include <string>
 #include <conio.h>
-#include <string.h>
 using namespace std;
 int main()
 {
-	//To confirm your choice, press x
+	//To confirm your choice, press enter
 	const int max_values = 3;
 	int choice = 0;
 	int num = 0;
-	int arr_choice[max_values] = {0, 1, 2};
-	string values[max_values] = {"TEST1", "TEST2", "TEST3"};
+	int arr_choice[max_values] = { 0, 1, 2 };
+	string values[max_values] = { "TEST1", "TEST2", "TEST3" };
 	while (true)
 	{
 		if (num < 0)
@@ -34,11 +34,11 @@ int main()
 		}
 
 		choice = _getch();
-		if (choice == 'w')
+		if (choice == 72)
 		{
 			num--;
 		}
-		if (choice == 's')
+		if (choice == 80)
 		{
 			num++;
 		}
@@ -46,7 +46,7 @@ int main()
 		switch (num)
 		{
 		case 0:
-			if (choice == 'x')
+			if (choice == '\r')
 			{
 				system("cls");
 				cout << "Test1 works succesfully!\n";
@@ -58,7 +58,7 @@ int main()
 				break;
 			}
 		case 1:
-			if (choice == 'x')
+			if (choice == '\r')
 			{
 				system("cls");
 				cout << "Test2 works succesfully\n";
@@ -70,7 +70,7 @@ int main()
 				break;
 			}
 		case 2:
-			if (choice == 'x')
+			if (choice == '\r')
 			{
 				system("cls");
 				cout << "Test3 works succesfully!\n";
